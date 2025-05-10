@@ -28,8 +28,10 @@ class Server {
     }
 
     renderHTML(res) {
-        const filePath = path.join(__dirname, "views", "index.html");
+        const filePath = path.join(__dirname, "..", "views", "index.html");
         fs.readFile(filePath, (err, data) => {
+            console.log(filePath);
+            
             if (err) {
                 this.handleError(res, "Internal Server Error");
                 return;
