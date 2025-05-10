@@ -1,11 +1,5 @@
-const http = require("http");
+const Server = require('./core/server.js');
 
-const server = http.createServer((req, res) => {
-    console.log(`Request received: ${req.method} ${req.url}`);
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.end("<h1>Hello World</h1>");
-});
-
-server.listen(3000, () => {
-    console.log("Server is running at http://localhost:3000/");
-});
+// Avvio del server
+const myServer = new Server(3000);
+myServer.startServer();
