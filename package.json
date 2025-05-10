@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-poker-analytics",
+  "version": "1.0.0",
+  "description": "- NodeJS     - electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EffettoFarfallinaDev/poker-analytics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EffettoFarfallinaDev/poker-analytics/issues"
+  },
+  "homepage": "https://github.com/EffettoFarfallinaDev/poker-analytics#readme",
+  "devDependencies": {
+    "electron": "^36.2.0",
+    "nodemon": "^3.1.10"
+  }
+}
