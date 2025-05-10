@@ -33,7 +33,7 @@ class Server {
             console.log(filePath);
             
             if (err) {
-                this.handleError(res, "Internal Server Error");
+                this.handleError(res, "Internal Server Error ... check: ", filename);
                 return;
             }
             res.writeHead(200, { "Content-Type": "text/html" });

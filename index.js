@@ -1,5 +1,10 @@
 const Server = require('./core/server.js');
 
-// Avvio del server
-const myServer = new Server(3000);
-myServer.startServer();
+// const server = new Server(3000);
+// server.startServer();
+
+new Server(3000).startServer().then(() => {
+    console.log('Server started successfully');
+    }).catch((error) => {
+    console.error('Error starting server:', error);
+});
